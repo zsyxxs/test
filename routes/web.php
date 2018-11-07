@@ -14,3 +14,8 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+//后台登录路由
+//Route::match(['get','post'],'/','Admin\IndexController@login');
+Route::match(['get','post'],'admin/login','Admin\IndexController@login');
